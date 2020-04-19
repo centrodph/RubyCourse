@@ -4,3 +4,7 @@ puts first_name + " " + last_name
 
 ## string interpolation
 puts "my first name is #{first_name}!"
+
+full_name = "#{first_name} #{last_name}"
+
+puts "typeof full_name = #{full_name.class}"
