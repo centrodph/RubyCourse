@@ -14,4 +14,4 @@ puts "hello" != "bye"
 puts "10 === 10.to_f #{10 === 10.to_f}"
 
 # types
-puts "10.eq?(10.) #{10.eq?(10.)}"
+puts "10.eql?(10.0) #{10.eql?(10.0)}"
