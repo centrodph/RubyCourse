@@ -6,22 +6,20 @@ $users = [
 ]
 
 def check_credentials(user, pass)
-    result = nil
     $users.each do |model|
         if model[:username] == user && pass == model[:password]
-            puts "found"
-            result = model
+            return model
         end
     end
-    result
+    nil
 end
 
 def ask_credentials
-    puts "Enter username:"
+    print "Enter username:"
     user = gets.chomp
-    puts "Enter password:"
+    print "Enter password:"
     pass = gets.chomp
-    puts "using #{user}/#{pass}" 
+
     check_credentials(user, pass)
 end
 
