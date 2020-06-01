@@ -12,15 +12,31 @@ dial_book = {
 }
 # Get city names from the hash
 def get_city_names(somehash)
-	# Write code here
+	somehash.each { |city, value| puts city.capitalize }
 end
 
 # Get area code based on given hash and key
 def get_area_code(somehash, key)
-	# Write code here
+	somehash.each { |city, value| return value if city.downcase == key.downcase }
+	nil
 end
 
 # Execution flow
 loop do
-	# Write your program execution code here
+	puts "Do you want to lookup an area code based on a city name? (Y/N)"
+	input = gets.chomp.downcase
+	if input == "n"
+		break
+	elsif input == "y" 
+		puts "Which city do you want the area code for?"
+		get_city_names(dial_book)
+		puts "Enter your selection :"
+		city = gets.chomp.downcase
+		code = get_area_code(dial_book, city)
+		if code
+			puts "The area code for #{city.downcase.capitalize} is #{code}" 
+		else
+			puts "#{city.downcase.capitalize} not found" 
+		end	
+	end
 end
