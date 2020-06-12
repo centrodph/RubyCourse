@@ -9,9 +9,15 @@ class Student
 	def to_s
 		"First name : #{@first_name}!"
 	end
-	
+
+	def first_name(name)
+		@first_name = name
+	end
+
 end
 
 example = Student.new
+
+example.first_name("Gerardo")
 
 puts example
