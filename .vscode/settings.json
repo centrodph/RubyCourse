@@ -11,6 +11,6 @@
   },
   "ruby.format": "rubocop", // use rubocop for formatting
   "editor.detectIndentation": false,
-  "editor.insertSpaces": false,
+  "editor.insertSpaces": true,
   "editor.tabSize": 2
 }
