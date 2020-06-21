@@ -1,38 +1,39 @@
+# frozen_string_literal: true
+
 class Student
-	# read more https://www.rubyguides.com/2018/11/attr_accessor/
-	attr_accessor :first_name, :last_name, :email
-	attr_reader :username
+  # read more https://www.rubyguides.com/2018/11/attr_accessor/
+  attr_accessor :first_name, :last_name, :email
+  attr_reader :username
 
-	@first_name
-	@last_name
-	@email
-	@username
-	@password
+  @first_name
+  @last_name
+  @email
+  @username
+  @password
 
-	# initialize
-	def initialize(first_name, last_name, username, email, password)
+  # initialize
+  def initialize(first_name, last_name, username, email, password)
     @first_name = first_name
     @last_name = last_name
     @email = email
     @username = username
     @password = password
-	end
+  end
 
-	# default to string
-	def to_s
-		"First name : #{@first_name}!"
-	end
+  # default to string
+  def to_s
+    "First name : #{@first_name}!"
+  end
 
-	# setter method
-	# def first_name=(name)
-	# 	@first_name = name
-	# end
+  # setter method
+  # def first_name=(name)
+  # 	@first_name = name
+  # end
 
-	# getter method
-	# def first_name
-	# 	@first_name
-	# end
-
+  # getter method
+  # def first_name
+  # 	@first_name
+  # end
 end
 
 # example = Student.new
@@ -45,6 +46,6 @@ end
 # puts example.first_name
 
 # other student
-ex2 = Student.new("Ger", "Per", "demo", "demo@gmail.com", "test123")
+ex2 = Student.new('Ger', 'Per', 'demo', 'demo@gmail.com', 'test123')
 
 puts ex2
