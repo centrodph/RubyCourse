@@ -27,3 +27,16 @@ $ yarn -v
 - https://rvm.io/
 
 - rvm list known # to show the known versions
+
+- rvm --default use x.x.x
+
+## rails
+
+- gem install bundler
+
+- gem install webpacker   # https://github.com/rails/webpacker
+
+- gem install rails -v x.x.x
+
+- gem list rails # to show the installed versions
+
