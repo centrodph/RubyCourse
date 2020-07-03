@@ -40,3 +40,5 @@ $ yarn -v
 
 - gem list rails # to show the installed versions
 
+
+- rails new XXXXX # to create a new application
