@@ -25,3 +25,5 @@ $ yarn -v
 ## RVM
 
 - https://rvm.io/
+
+- rvm list known # to show the known versions
