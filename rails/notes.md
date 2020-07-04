@@ -62,3 +62,7 @@ $ yarn -v
 -> Model sends back information to controller
 
 -> Controller renders view
+
+### Generate commands
+
+- rails generate controller XXX
